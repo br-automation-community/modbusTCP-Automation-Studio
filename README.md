@@ -1,9 +1,14 @@
 ## Description
 modbusTCP library for Automation Studio with legacy runtimes that don't support native modbusTCP.
 
-See [**description**](https://github.com/br-automation-community/modbusTCP-Automation-Studio/blob/master/Description%20modbusTCP%20library%20AS4.x.pdf) for more details. Also see release package for additional tools.
+See [**description**](https://github.com/br-automation-community/modbusTCP-Automation-Studio/blob/master/Description%20modbusTCP%20library%20AS6.x.pdf) for more details. Also see release package for additional tools.
 
 ## Revision History
+Version 3.0
+
+- Update project to AS6
+- Change logger function call to avoid warnings in AS6
+
 Version 2.1
 
 - SLAVE: Changed default port to 502
