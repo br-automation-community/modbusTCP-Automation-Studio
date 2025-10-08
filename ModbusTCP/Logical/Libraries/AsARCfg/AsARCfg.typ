@@ -1,4 +1,5 @@
-TYPE
+                                                                      
+ TYPE
 	cfgLease_typ : STRUCT				(*lease structure*)
 		name			: STRING[8];	(*name of lease (max 8)*)
 		startAdr		: STRING[16];	(*start address of lease*)

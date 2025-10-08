@@ -28,7 +28,7 @@
 
 UINT MySwapUINT(UINT data);
 INT MySwapINT(INT data);
-void NewLogEntry(STRING message[LOG_LINE_LEN], UDINT LOGBOOK);
+void NewLogEntry(const char* msg, UDINT LOGBOOK);
 
 // ------------------------------------------------------------------------------------------------- 
 // Swap or not swap, that is the question 
@@ -79,7 +79,7 @@ void MessageLog(USINT type, USINT function_code, UINT start_addr, UINT length, U
 // ------------------------------------------------------------------------------------------------- 
 //	Generate logbook message 
 // ------------------------------------------------------------------------------------------------- 
-void NewLogEntry(STRING message[LOG_LINE_LEN], UDINT p_log)
+void NewLogEntry(const char* message, UDINT p_log)
 {
 	RTCtime_typ	RTCtime_struct;
 	STRING		lstr1[LOG_LINE_LEN], lstr2[LOG_LINE_LEN];

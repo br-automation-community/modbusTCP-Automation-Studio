@@ -1,10 +1,18 @@
-/* Automation Studio Generated Header File, Format Version 1.00 */
-/* do not change */
+/* Automation Studio generated header file */
+/* Do not edit ! */
+
 #ifndef STANDARD_H_
 #define STANDARD_H_
-#define _WEAK	__attribute__((__weak__))
+#ifdef __cplusplus
+extern "C" 
+{
+#endif
 
-#include <bur/plc.h>
+#include <bur/plctypes.h>
+
+#ifndef _BUR_PUBLIC
+#define _BUR_PUBLIC
+#endif
 
 #define TP_10mstyp	TP_10ms_typ
 #define TOF_10mstyp	TOF_10ms_typ
@@ -235,23 +243,25 @@ typedef struct RF_TRIG
 
 
 /* Prototyping of functions and function blocks */
-void TP_10ms(TP_10ms_typ* inst);
-void TOF_10ms(TOF_10ms_typ* inst);
-void TON_10ms(TON_10ms_typ* inst);
-void TP(TP_typ* inst);
-void TOF(TOF_typ* inst);
-void TON(TON_typ* inst);
-void SEMA(SEMA_typ* inst);
-void RS(RS_typ* inst);
-void SR(SR_typ* inst);
-void R_TRIG(R_TRIG_typ* inst);
-void F_TRIG(F_TRIG_typ* inst);
-void CTU(CTU_typ* inst);
-void CTD(CTD_typ* inst);
-void CTUD(CTUD_typ* inst);
-void RF_TRIG(RF_TRIG_typ* inst);
+_BUR_PUBLIC void TP_10ms(TP_10ms_typ* inst);
+_BUR_PUBLIC void TOF_10ms(TOF_10ms_typ* inst);
+_BUR_PUBLIC void TON_10ms(TON_10ms_typ* inst);
+_BUR_PUBLIC void TP(TP_typ* inst);
+_BUR_PUBLIC void TOF(TOF_typ* inst);
+_BUR_PUBLIC void TON(TON_typ* inst);
+_BUR_PUBLIC void SEMA(SEMA_typ* inst);
+_BUR_PUBLIC void RS(RS_typ* inst);
+_BUR_PUBLIC void SR(SR_typ* inst);
+_BUR_PUBLIC void R_TRIG(R_TRIG_typ* inst);
+_BUR_PUBLIC void F_TRIG(F_TRIG_typ* inst);
+_BUR_PUBLIC void CTU(CTU_typ* inst);
+_BUR_PUBLIC void CTD(CTD_typ* inst);
+_BUR_PUBLIC void CTUD(CTUD_typ* inst);
+_BUR_PUBLIC void RF_TRIG(RF_TRIG_typ* inst);
 
 
-
+#ifdef __cplusplus
+};
+#endif
 #endif /* STANDARD_H_ */
 

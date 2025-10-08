@@ -22,7 +22,7 @@ UINT analyze_answer_from_slave (struct modbus_master_cfg_typ* config, USINT req_
 
 UINT MySwapUINT(UINT data);
 INT MySwapINT(INT data);
-void NewLogEntry(STRING message[LOG_LINE_LEN], UDINT p_log);
+void NewLogEntry(const char* msg, UDINT p_log);
 void MessageLog(USINT type, USINT function_code, UINT start_addr, UINT length, UDINT p_log);
 										
 // ------------------------------------------------------------------------------------------------- 

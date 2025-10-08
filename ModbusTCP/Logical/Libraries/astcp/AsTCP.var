@@ -1,14 +1,4 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsTcp
- * File: AsTcp.var
- * Author: feinerr
- * Created: 09.08.2006
- ********************************************************************
- * Local variables of library AsTcp
- ********************************************************************)
-
+                                                                      
 VAR CONSTANT
 	tcpERR_INVALID_IDENT				: UINT := 32600;	(*invalid ident*)
 	tcpERR_NOMORE_IDENTS				: UINT := 32601;	(*no more idents*)
@@ -30,6 +20,9 @@ VAR CONSTANT
 	tcpERR_SOCKET_LISTEN				: UINT := 32652;	(*listen socket failed*)
 	tcpERR_SOCKET_ACCEPT				: UINT := 32653;	(*accept socket failed*)
 	
+	tcpERR_INVALID_SSL_CONFIG			: UINT := 32697;	(*invalid SSL configuration given*)
+	tcpERR_SSL_HANDSHAKE_FAILED			: UINT := 32698;	(*SSL handshake failed*)
+	
 	tcpERR_SYSTEM						: UINT := 32699;	(*system error*)
 
 	tcpSO_LINGER_SET					: UDINT := 1001;	(*set option linger*)
@@ -47,6 +40,12 @@ VAR CONSTANT
 	tcpSO_NOWAITING_GET					: UDINT := 1013;	(*get option no waiting until client connects*)
 	tcpTCP_NODELAY_SET					: UDINT := 2001;	(*set option tcp no delay*)
 	tcpTCP_NODELAY_GET					: UDINT := 2002;	(*get option tcp no delay*)
+	tcpTCP_KEEPCNT_SET					: UDINT := 2003;	(*set option tcp keep count*)
+	tcpTCP_KEEPCNT_GET					: UDINT := 2004;	(*get option tcp keep count*)
+	tcpTCP_KEEPIDLE_SET					: UDINT := 2005;	(*set option tcp keep idle*)
+	tcpTCP_KEEPIDLE_GET					: UDINT := 2006;	(*get option tcp keep idle*)
+	tcpTCP_KEEPINTVL_SET				: UDINT := 2007;	(*set option tcp keep intervall*)
+	tcpTCP_KEEPINTVL_GET				: UDINT := 2008;	(*get option tcp keep intervall*)
 	tcpID_LIST_GET						: UDINT := 3001;	(*get ident list*)
 	tcpID_MAX_GET						: UDINT := 3002;	(*get max ident count*)
 	
@@ -59,5 +58,5 @@ VAR CONSTANT
 	tcpSHUT_RD							: UDINT := 1;		(*shutdown read channel*)
 	tcpSHUT_WR							: UDINT := 2;		(*shutdown write channel*)
 	
-	tcpINVALID_IDENT					: UDINT := 0;		(*invlaid ident*)
+	tcpINVALID_IDENT					: UDINT := 0;		(*invalid ident*)
 END_VAR
